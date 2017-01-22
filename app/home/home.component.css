@@ -1,0 +1,25 @@
+.container:before {
+    height: 20%;
+}
+
+.logoContainer {
+  text-align:center; /* Align center inline elements */
+  font: 0/0 a;       /* Hide the characters like spaces */
+  margin-top: 125px;
+}
+
+
+.logoContainer img {
+  display: inline-block;
+  width: 50%;
+}
+
+@media screen and (orientation: landscape) {
+    .logoContainer {
+        margin-top: 50px;
+    }
+    .logoContainer img {
+        display: inline-block;
+        width: 25%;
+    }
+}
