@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HomeComponent = (function () {
-    function HomeComponent() {
-        this.pageTitle = 'AQT Home';
-        this.logoWidth = 50;
+var StartComponent = (function () {
+    function StartComponent() {
     }
-    HomeComponent = __decorate([
+    StartComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/home/home.component.html',
-            // styleUrls: ['app/home/home.component.css','app/app.component.css']
-            styleUrls: ['app/home/home.component.css']
+            templateUrl: 'app/start/start.component.html',
+            styleUrls: ['app/start/start.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], StartComponent);
+    return StartComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.StartComponent = StartComponent;
+//# sourceMappingURL=start.component.js.map

@@ -14,6 +14,7 @@ var router_1 = require('@angular/router');
 var common_1 = require('@angular/common');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
+var start_component_1 = require('./start/start.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -23,13 +24,15 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 router_1.RouterModule.forRoot([
                     { path: 'home', component: home_component_1.HomeComponent },
+                    { path: 'start', component: start_component_1.StartComponent },
                     { path: '', redirectTo: 'home', pathMatch: 'full' },
                     { path: '**', redirectTo: 'home', pathMatch: 'full' }
                 ])
             ],
             declarations: [
                 app_component_1.AppComponent,
-                home_component_1.HomeComponent
+                home_component_1.HomeComponent,
+                start_component_1.StartComponent
             ],
             providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }],
             bootstrap: [app_component_1.AppComponent]

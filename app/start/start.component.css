@@ -1,0 +1,11 @@
+.background_1
+{
+	/*main page*/
+	background-image: url(/app/assets/images/backgrounds/background1a-centered.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 800px;
+	text-align: center;
+	overflow: hidden;
+}
