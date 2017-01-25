@@ -1,7 +1,24 @@
 <div id='background_2'>
-    <!--<div class='logoContainer'>
-        <a [routerLink]="['/start']"><img src = 'app/assets/images/AQTLogoText-400.png' > </a>
-    </div>-->
-     <h1>Start Here</h1>
+    <div class="aqtnav">
+        <div id="explore-button" ng-click='goTo("/explore_main")'>
+            <div class="aqtnav-button-label txt-reverse menuitem-bold">
+                <span class = "txt-yellow-green">Explore</span><br />
+                The<br />
+                Quilt
+                <div class="icon-explore"></div>
+            </div>
+        </div>
+        <div id="participate-button" ng-click='goTo("/my_quilt")'>
+            <div class="aqtnav-button-label txt-reverse">
+                <span class = "txt-yellow-green menuitem-bold">
+                    My<br />
+                    Quilt<br />
+                </span>
+                <span style="font-size: 70%;">[participate]</span>
+            </div>
+        </div>
+    </div>
+
+
 
 </div>
