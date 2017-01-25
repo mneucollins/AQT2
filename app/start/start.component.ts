@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
     styleUrls: ['app/start/start.component.css']
 })
 
-export class StartComponent{}
+export class StartComponent{
+    pageTitle: 'AQT Start';
+}

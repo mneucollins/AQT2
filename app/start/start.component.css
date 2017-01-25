@@ -1,7 +1,9 @@
-.background_1
+#background_2
 {
 	/*main page*/
 	background-image: url(/app/assets/images/backgrounds/background1a-centered.jpg);
+	margin-left: -20px;
+	margin-right: -20px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
