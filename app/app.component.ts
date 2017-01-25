@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: 'app/app.component.html',
     styleUrls: ['app/app.component.css']
 })
-export class AppComponent { }
+export class AppComponent {
+    backgroundImage: string ='url(/app/assets/images/backgrounds/background_white_c.jpg)';
+}
