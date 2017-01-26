@@ -15,6 +15,7 @@ var common_1 = require('@angular/common');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var start_component_1 = require('./start/start.component');
+var explore_module_1 = require('./explore/explore.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +28,8 @@ var AppModule = (function () {
                     { path: 'start', component: start_component_1.StartComponent },
                     { path: '', redirectTo: 'home', pathMatch: 'full' },
                     { path: '**', redirectTo: 'home', pathMatch: 'full' }
-                ])
+                ]),
+                explore_module_1.ExploreModule
             ],
             declarations: [
                 app_component_1.AppComponent,

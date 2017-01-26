@@ -9,23 +9,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
-var StartComponent = (function () {
-    function StartComponent(_router) {
-        this._router = _router;
+var common_1 = require('@angular/common');
+var explore_component_1 = require('./explore.component');
+var ExploreModule = (function () {
+    function ExploreModule() {
     }
-    ;
-    StartComponent.prototype.onExplore = function () {
-        this._router.navigate(['/explore']);
-    };
-    StartComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/start/start.component.html',
-            styleUrls: ['app/start/start.component.css']
+    ExploreModule = __decorate([
+        core_1.NgModule({
+            declarations: [
+                explore_component_1.ExploreComponent,
+            ],
+            imports: [
+                forms_1.FormsModule,
+                common_1.CommonModule,
+                router_1.RouterModule.forChild([
+                    { path: 'explore', component: explore_component_1.ExploreComponent },
+                ])
+            ],
+            providers: []
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], StartComponent);
-    return StartComponent;
+        __metadata('design:paramtypes', [])
+    ], ExploreModule);
+    return ExploreModule;
 }());
-exports.StartComponent = StartComponent;
-//# sourceMappingURL=start.component.js.map
+exports.ExploreModule = ExploreModule;
+//# sourceMappingURL=explore.module.js.map

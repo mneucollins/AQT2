@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
     templateUrl: 'app/start/start.component.html',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 
 export class StartComponent{
     pageTitle: 'AQT Start';
+    constructor ( private _router: Router){};
+
+    onExplore(): void {
+        this._router.navigate(['/explore']);
+    }
 }
