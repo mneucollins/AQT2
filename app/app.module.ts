@@ -7,6 +7,8 @@ import { AppComponent }  from './app.component';
 import { HomeComponent } from './home/home.component';
 import { StartComponent } from './start/start.component';
 
+import { ExploreModule } from './explore/explore.module';
+
 @NgModule({
   imports: [ 
     BrowserModule ,
@@ -15,8 +17,10 @@ import { StartComponent } from './start/start.component';
       { path: 'start', component: StartComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full'},
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
-    ])
+    ]),
+    ExploreModule
   ],
+  
 
   declarations: [ 
     AppComponent,
