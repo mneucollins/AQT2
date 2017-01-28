@@ -1,0 +1,29 @@
+.globalnav {
+    background-color: #3A3A3C;
+    position: absolute;
+    /*left: 0px;*/
+    width: 100%;
+    /*padding-top: 6px;
+    padding-right: 15px;*/
+    min-height: 72px; 
+    bottom: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.globalnav .navbutton {
+    /* for 6 buttons across */
+    display: inline-block;
+    width:15%; 
+    height: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container-fluid {
+    /*overide to take button background to the edge*/
+    padding-left:20px;
+}
