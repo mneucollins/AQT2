@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
 var common_1 = require('@angular/common');
+// import { GlobalNavComponent } from '../shared/globalnav.component';
 var explore_component_1 = require('./explore.component');
 var ExploreModule = (function () {
     function ExploreModule() {

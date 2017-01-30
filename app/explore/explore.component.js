@@ -9,15 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var ExploreComponent = (function () {
-    function ExploreComponent() {
+    function ExploreComponent(_router) {
+        this._router = _router;
     }
+    ;
+    ExploreComponent.prototype.onExploreTheQuilt = function () {
+        this._router.navigate(['/explore_the_quilt']);
+    };
     ExploreComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/explore/explore.component.html',
             styleUrls: ['app/explore/explore.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], ExploreComponent);
     return ExploreComponent;
 }());

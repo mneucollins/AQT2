@@ -12,7 +12,7 @@ import { ExploreModule } from './explore/explore.module';
 
 @NgModule({
   imports: [ 
-    BrowserModule ,
+    BrowserModule,
     RouterModule.forRoot ([
       { path: 'home', component: HomeComponent },
       { path: 'start', component: StartComponent },
