@@ -9,23 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var ExploreComponent = (function () {
-    function ExploreComponent(_router) {
-        this._router = _router;
+var globalnav_component_1 = require('./globalnav.component');
+var common_1 = require('@angular/common');
+var SharedModule = (function () {
+    function SharedModule() {
     }
-    ;
-    ExploreComponent.prototype.onExploreTheQuilt = function () {
-        this._router.navigate(['/explore_the_quilt']);
-    };
-    ExploreComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/explore/explore.component.html',
-            styleUrls: ['app/explore/explore.component.css']
+    SharedModule = __decorate([
+        core_1.NgModule({
+            declarations: [globalnav_component_1.GlobalNavComponent],
+            imports: [common_1.CommonModule],
+            exports: [
+                common_1.CommonModule,
+                globalnav_component_1.GlobalNavComponent
+            ]
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], ExploreComponent);
-    return ExploreComponent;
+        __metadata('design:paramtypes', [])
+    ], SharedModule);
+    return SharedModule;
 }());
-exports.ExploreComponent = ExploreComponent;
-//# sourceMappingURL=explore.component.js.map
+exports.SharedModule = SharedModule;
+//# sourceMappingURL=shared.module.js.map

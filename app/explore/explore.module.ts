@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+// import { CommonModule } from '@angular/common';
+// CommonModule is now imported from SharedModule
+import { SharedModule } from '../shared/shared.module';
 import { ExploreComponent } from './explore.component';
 
 @NgModule({
@@ -13,10 +15,11 @@ import { ExploreComponent } from './explore.component';
 
     imports:[
         FormsModule,
-        CommonModule,
+        // CommonModule,
+        SharedModule,
         RouterModule.forChild([
             { path: 'explore', component: ExploreComponent },
-            // { path: 'exploreQuilt', component: ExploreQuiltComponent },
+            // { path: 'explore_the_quilt', component: ExploreTheQuiltComponent },
             // { path: 'exploreRandom', component: ExploreRandomComponent }
         ])
     ],

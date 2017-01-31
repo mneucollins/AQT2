@@ -15,8 +15,9 @@ var common_1 = require('@angular/common');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var start_component_1 = require('./start/start.component');
-var globalnav_component_1 = require('./shared/globalnav.component');
+// import { GlobalNavComponent } from './shared/globalnav.component';
 var explore_module_1 = require('./explore/explore.module');
+var shared_module_1 = require('./shared/shared.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,13 +34,13 @@ var AppModule = (function () {
                     { path: '', redirectTo: 'home', pathMatch: 'full' },
                     { path: '**', redirectTo: 'home', pathMatch: 'full' }
                 ]),
-                explore_module_1.ExploreModule
+                explore_module_1.ExploreModule,
+                shared_module_1.SharedModule
             ],
             declarations: [
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
                 start_component_1.StartComponent,
-                globalnav_component_1.GlobalNavComponent,
             ],
             providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }],
             bootstrap: [app_component_1.AppComponent]
