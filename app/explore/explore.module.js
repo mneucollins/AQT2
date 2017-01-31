@@ -11,8 +11,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
-var common_1 = require('@angular/common');
-// import { GlobalNavComponent } from '../shared/globalnav.component';
+// import { CommonModule } from '@angular/common';
+// CommonModule is now imported from SharedModule
+var shared_module_1 = require('../shared/shared.module');
 var explore_component_1 = require('./explore.component');
 var ExploreModule = (function () {
     function ExploreModule() {
@@ -24,7 +25,8 @@ var ExploreModule = (function () {
             ],
             imports: [
                 forms_1.FormsModule,
-                common_1.CommonModule,
+                // CommonModule,
+                shared_module_1.SharedModule,
                 router_1.RouterModule.forChild([
                     { path: 'explore', component: explore_component_1.ExploreComponent },
                 ])
