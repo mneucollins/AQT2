@@ -15,6 +15,7 @@ var router_1 = require('@angular/router');
 // CommonModule is now imported from SharedModule
 var shared_module_1 = require('../shared/shared.module');
 var explore_component_1 = require('./explore.component');
+var explorequilt_component_1 = require('./explorequilt.component');
 var ExploreModule = (function () {
     function ExploreModule() {
     }
@@ -22,6 +23,7 @@ var ExploreModule = (function () {
         core_1.NgModule({
             declarations: [
                 explore_component_1.ExploreComponent,
+                explorequilt_component_1.ExploreQuiltComponent,
             ],
             imports: [
                 forms_1.FormsModule,
@@ -29,6 +31,7 @@ var ExploreModule = (function () {
                 shared_module_1.SharedModule,
                 router_1.RouterModule.forChild([
                     { path: 'explore', component: explore_component_1.ExploreComponent },
+                    { path: 'explore_the_quilt', component: explorequilt_component_1.ExploreQuiltComponent },
                 ])
             ],
             providers: []

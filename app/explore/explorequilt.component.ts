@@ -2,19 +2,14 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    templateUrl: 'app/explore/explore.component.html',
-    styleUrls: ['app/explore/explore.component.css']
+    templateUrl: 'app/explore/explorequilt.component.html',
+    styleUrls: ['app/explore/explorequilt.component.css']
 })
 
-export class ExploreComponent{
+export class ExploreQuiltComponent{
     constructor ( private _router: Router){};
 
-    onExploreTheQuilt(): void {
+    onRandom(): void {
         this._router.navigate(['/explore_the_quilt']);
     }
-
-    onGoMyQuilt(): void {
-
-    }
-
 }
