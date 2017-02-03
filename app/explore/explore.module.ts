@@ -5,11 +5,12 @@ import { RouterModule } from '@angular/router';
 // CommonModule is now imported from SharedModule
 import { SharedModule } from '../shared/shared.module';
 import { ExploreComponent } from './explore.component';
+import { ExploreQuiltComponent } from './explorequilt.component';
 
 @NgModule({
     declarations:[
         ExploreComponent,
-        // ExploreQuiltComponent,
+        ExploreQuiltComponent,
         // ExploreRandomComponent,
     ],
 
@@ -19,7 +20,7 @@ import { ExploreComponent } from './explore.component';
         SharedModule,
         RouterModule.forChild([
             { path: 'explore', component: ExploreComponent },
-            // { path: 'explore_the_quilt', component: ExploreTheQuiltComponent },
+            { path: 'explore_the_quilt', component: ExploreQuiltComponent },
             // { path: 'exploreRandom', component: ExploreRandomComponent }
         ])
     ],
