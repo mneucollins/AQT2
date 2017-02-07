@@ -10,24 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var ExploreComponent = (function () {
-    function ExploreComponent(_router) {
+var ExploreQuiltComponent = (function () {
+    function ExploreQuiltComponent(_router) {
         this._router = _router;
     }
     ;
-    ExploreComponent.prototype.onExploreTheQuilt = function () {
+    ExploreQuiltComponent.prototype.onRandom = function () {
         this._router.navigate(['/explore_the_quilt']);
     };
-    ExploreComponent.prototype.onGoMyQuilt = function () {
-    };
-    ExploreComponent = __decorate([
+    ExploreQuiltComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/explore/explore.component.html',
-            styleUrls: ['app/explore/explore.component.css']
+            templateUrl: 'app/explore/explorequilt.component.html',
+            styleUrls: ['app/explore/explorequilt.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], ExploreComponent);
-    return ExploreComponent;
+    ], ExploreQuiltComponent);
+    return ExploreQuiltComponent;
 }());
-exports.ExploreComponent = ExploreComponent;
-//# sourceMappingURL=explore.component.js.map
+exports.ExploreQuiltComponent = ExploreQuiltComponent;
+//# sourceMappingURL=explorequilt.component.js.map
