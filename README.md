@@ -1,6 +1,9 @@
 # AQT2
 ##AIDS Quilt Touch --Angular2 Development
-Structure Diagram is in the /dev folder
+Structure Diagram is in the /dev folder (revised 20170209)
+
+Navigation Diagram added to /dev folder references screen images in shared google drive folder "AQT_HWB_Final" as well as inVision prototype here:https://invis.io/4Q8ZSY2T2
+
 (https://github.com/mneucollins/AQT2/blob/master/dev/Angular2Structure.pdf)
 
 **Starting Up Local Dev Server (npm installed)**
