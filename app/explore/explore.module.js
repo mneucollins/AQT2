@@ -16,6 +16,7 @@ var router_1 = require('@angular/router');
 var shared_module_1 = require('../shared/shared.module');
 var explore_component_1 = require('./explore.component');
 var explorequilt_component_1 = require('./explorequilt.component');
+var viewrandom_component_1 = require('./viewrandom.component');
 var ExploreModule = (function () {
     function ExploreModule() {
     }
@@ -24,6 +25,7 @@ var ExploreModule = (function () {
             declarations: [
                 explore_component_1.ExploreComponent,
                 explorequilt_component_1.ExploreQuiltComponent,
+                viewrandom_component_1.ViewRandomComponent
             ],
             imports: [
                 forms_1.FormsModule,
@@ -32,6 +34,7 @@ var ExploreModule = (function () {
                 router_1.RouterModule.forChild([
                     { path: 'explore', component: explore_component_1.ExploreComponent },
                     { path: 'explore_the_quilt', component: explorequilt_component_1.ExploreQuiltComponent },
+                    { path: 'view_random', component: viewrandom_component_1.ViewRandomComponent },
                 ])
             ],
             providers: []

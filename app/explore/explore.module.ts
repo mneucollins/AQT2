@@ -6,11 +6,14 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ExploreComponent } from './explore.component';
 import { ExploreQuiltComponent } from './explorequilt.component';
+import { ViewRandomComponent } from './viewrandom.component';
+
 
 @NgModule({
     declarations:[
         ExploreComponent,
         ExploreQuiltComponent,
+        ViewRandomComponent
         // ExploreRandomComponent,
     ],
 
@@ -21,6 +24,7 @@ import { ExploreQuiltComponent } from './explorequilt.component';
         RouterModule.forChild([
             { path: 'explore', component: ExploreComponent },
             { path: 'explore_the_quilt', component: ExploreQuiltComponent },
+            { path: 'view_random', component: ViewRandomComponent },
             // { path: 'exploreRandom', component: ExploreRandomComponent }
         ])
     ],

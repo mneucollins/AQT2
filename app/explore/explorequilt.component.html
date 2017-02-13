@@ -12,7 +12,7 @@
 			</div>
 		</div>
 
-		<div class="row spaceabove20" id="viewrandom-button" ng-click='goRandom("/explore_random_view")'>
+		<div class="row spaceabove20" id="viewrandom-button" (click)='onRandom()'>
 			<div class="col-xs-9 viewrandom-label vcenter">
 				<div class="explore_the_quilt-menu txt-reverse ">
 					View a Random Selection
@@ -25,7 +25,7 @@
 				<div class="explore_the_quilt-menu txt-reverse">
 					Find a Name
 				</div>
-			</div>			
+			</div>
 			<div class="col-xs-2 icon-right vcenter"></div>
 		</div>
 		<div class="row spaceabove20" id="taketour-button" ng-click='goTour("/#")'>
