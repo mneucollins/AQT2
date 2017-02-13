@@ -10,19 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var ViewRandomComponent = (function () {
-    function ViewRandomComponent(_router) {
+var TakeTourComponent = (function () {
+    function TakeTourComponent(_router) {
         this._router = _router;
     }
     ;
-    ViewRandomComponent = __decorate([
+    TakeTourComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/explore/viewrandom.component.html',
-            styleUrls: ['app/explore/viewrandom.component.css']
+            templateUrl: 'app/explore/taketour.component.html',
+            styleUrls: ['app/explore/taketour.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], ViewRandomComponent);
-    return ViewRandomComponent;
+    ], TakeTourComponent);
+    return TakeTourComponent;
 }());
-exports.ViewRandomComponent = ViewRandomComponent;
-//# sourceMappingURL=viewrandom.component.js.map
+exports.TakeTourComponent = TakeTourComponent;
+//# sourceMappingURL=taketour.component.js.map

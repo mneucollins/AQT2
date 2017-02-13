@@ -17,6 +17,8 @@ var shared_module_1 = require('../shared/shared.module');
 var explore_component_1 = require('./explore.component');
 var explorequilt_component_1 = require('./explorequilt.component');
 var viewrandom_component_1 = require('./viewrandom.component');
+var taketour_component_1 = require('./taketour.component');
+var findaname_component_1 = require('./findaname.component');
 var ExploreModule = (function () {
     function ExploreModule() {
     }
@@ -25,7 +27,9 @@ var ExploreModule = (function () {
             declarations: [
                 explore_component_1.ExploreComponent,
                 explorequilt_component_1.ExploreQuiltComponent,
-                viewrandom_component_1.ViewRandomComponent
+                viewrandom_component_1.ViewRandomComponent,
+                taketour_component_1.TakeTourComponent,
+                findaname_component_1.FindNameComponent,
             ],
             imports: [
                 forms_1.FormsModule,
@@ -35,6 +39,8 @@ var ExploreModule = (function () {
                     { path: 'explore', component: explore_component_1.ExploreComponent },
                     { path: 'explore_the_quilt', component: explorequilt_component_1.ExploreQuiltComponent },
                     { path: 'view_random', component: viewrandom_component_1.ViewRandomComponent },
+                    { path: 'take_a_tour', component: taketour_component_1.TakeTourComponent },
+                    { path: 'find_a_name', component: findaname_component_1.FindNameComponent },
                 ])
             ],
             providers: []
