@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
-import { GlobalNavComponent } from './globalnav.component';
+import { GlobalNav6Component } from './globalnav6.component';
+import { GlobalNav4Component } from './globalnav4.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule ({
-    declarations: [ GlobalNavComponent ],
+    declarations: [ 
+        GlobalNav6Component,
+        GlobalNav4Component 
+    ],
     imports: [ CommonModule ],
     exports: [
         CommonModule,
-        GlobalNavComponent
+        GlobalNav6Component,
+        GlobalNav4Component
     ]
 })
 

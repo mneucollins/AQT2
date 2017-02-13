@@ -20,6 +20,17 @@
 	background-color: rgba(237, 42, 123, 0.75); 
 }
 
+.icon-explore {
+  /*magnifying glass, open background*/
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  background-image: url(../images/layout/icon-explore.png);
+  position: relative;
+  bottom: 50px;
+  float: right; }
+
+
 #participate-button {
 	width: 100%;
 	height: 46%;
