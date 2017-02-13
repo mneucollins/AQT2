@@ -3,13 +3,14 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
-    selector: 'globalnav',
-    templateUrl: 'app/shared/globalnav.component.html',
-    styleUrls: ['app/shared/globalnav.component.css']
+    selector: 'globalnav6',
+    templateUrl: 'app/shared/globalnav6.component.html',
+    styleUrls: ['app/shared/globalnav6.component.css']
 })
 
-export class GlobalNavComponent {
+export class GlobalNav6Component {
     //global routing is in the app.module
+    //GlobalNav6 a 6-icon menu bar for placement at the bottome of the screen
     constructor ( private _router: Router, private _location: Location ){};
     
     onHome(): void {
@@ -18,4 +19,5 @@ export class GlobalNavComponent {
     onBack(): void {
         this._location.back();
     }
+    
 }        

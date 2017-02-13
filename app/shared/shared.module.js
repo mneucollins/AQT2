@@ -9,18 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var globalnav_component_1 = require('./globalnav.component');
+var globalnav6_component_1 = require('./globalnav6.component');
+var globalnav4_component_1 = require('./globalnav4.component');
 var common_1 = require('@angular/common');
 var SharedModule = (function () {
     function SharedModule() {
     }
     SharedModule = __decorate([
         core_1.NgModule({
-            declarations: [globalnav_component_1.GlobalNavComponent],
+            declarations: [
+                globalnav6_component_1.GlobalNav6Component,
+                globalnav4_component_1.GlobalNav4Component
+            ],
             imports: [common_1.CommonModule],
             exports: [
                 common_1.CommonModule,
-                globalnav_component_1.GlobalNavComponent
+                globalnav6_component_1.GlobalNav6Component,
+                globalnav4_component_1.GlobalNav4Component
             ]
         }), 
         __metadata('design:paramtypes', [])
