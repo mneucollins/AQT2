@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
+var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var ExploreQuiltComponent = (function () {
     function ExploreQuiltComponent(_router) {
         this._router = _router;
@@ -24,14 +24,14 @@ var ExploreQuiltComponent = (function () {
     ExploreQuiltComponent.prototype.findName = function () {
         this._router.navigate(['/find_a_name']);
     };
+    ExploreQuiltComponent = __decorate([
+        core_1.Component({
+            templateUrl: 'app/explore/explorequilt.component.html',
+            styleUrls: ['app/explore/explorequilt.component.css']
+        }), 
+        __metadata('design:paramtypes', [router_1.Router])
+    ], ExploreQuiltComponent);
     return ExploreQuiltComponent;
 }());
-ExploreQuiltComponent = __decorate([
-    core_1.Component({
-        templateUrl: 'app/explore/explorequilt.component.html',
-        styleUrls: ['app/explore/explorequilt.component.css']
-    }),
-    __metadata("design:paramtypes", [router_1.Router])
-], ExploreQuiltComponent);
 exports.ExploreQuiltComponent = ExploreQuiltComponent;
 //# sourceMappingURL=explorequilt.component.js.map
