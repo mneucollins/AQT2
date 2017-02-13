@@ -12,7 +12,7 @@
 			</div>
 		</div>
 
-		<div class="row spaceabove20" id="viewrandom-button" ng-click='goRandom("/explore_random_view")'>
+		<div class="row spaceabove20" id="viewrandom-button" (click)='onRandom()'>
 			<div class="col-xs-9 viewrandom-label vcenter">
 				<div class="explore_the_quilt-menu txt-reverse ">
 					View a Random Selection
@@ -20,15 +20,15 @@
 			</div>
 			<div class="col-xs-2 icon-right vcenter"></div>
 		</div>
-		<div class="row spaceabove20" id="findname-button" ng-click='goFind("/#")'>
+		<div class="row spaceabove20" id="findname-button" (click)='findName()'>
 			<div class="col-xs-9 npad-right vcenter">
 				<div class="explore_the_quilt-menu txt-reverse">
 					Find a Name
 				</div>
-			</div>			
+			</div>
 			<div class="col-xs-2 icon-right vcenter"></div>
 		</div>
-		<div class="row spaceabove20" id="taketour-button" ng-click='goTour("/#")'>
+		<div class="row spaceabove20" id="taketour-button" (click)='takeTour()'>
 			<div class="col-xs-9 npad-right vcenter">
 				<div class="explore_the_quilt-menu txt-reverse">
 					Take a tour
@@ -37,5 +37,5 @@
 			<div class="col-xs-2 icon-right vcenter"></div>
 		</div>
 	</div>
-	<globalnav></globalnav>
+	<globalnav4></globalnav4>
 </div>
