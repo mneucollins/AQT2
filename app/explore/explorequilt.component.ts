@@ -10,6 +10,14 @@ export class ExploreQuiltComponent{
     constructor ( private _router: Router){};
 
     onRandom(): void {
-        this._router.navigate(['/explore_the_quilt']);
+        this._router.navigate(['/view_random']);
+    }
+
+    takeTour(): void {
+        this._router.navigate(['/take_a_tour']);
+    }
+
+    findName(): void {
+        this._router.navigate(['/find_a_name']);
     }
 }
