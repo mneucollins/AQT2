@@ -10,25 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var ExploreComponent = (function () {
-    function ExploreComponent(_router) {
+var ExploreStoriesComponent = (function () {
+    function ExploreStoriesComponent(_router) {
         this._router = _router;
     }
     ;
-    ExploreComponent.prototype.onExploreTheQuilt = function () {
-        this._router.navigate(['/explore_the_quilt']);
-    };
-    ExploreComponent.prototype.onExploreTheStories = function () {
-        this._router.navigate(['/explore_stories']);
-    };
-    ExploreComponent = __decorate([
+    ExploreStoriesComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/explore/explore.component.html',
-            styleUrls: ['app/explore/explore.component.css']
+            templateUrl: 'app/explore/explorestories.component.html',
+            styleUrls: ['app/explore/explorestories.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], ExploreComponent);
-    return ExploreComponent;
+    ], ExploreStoriesComponent);
+    return ExploreStoriesComponent;
 }());
-exports.ExploreComponent = ExploreComponent;
-//# sourceMappingURL=explore.component.js.map
+exports.ExploreStoriesComponent = ExploreStoriesComponent;
+//# sourceMappingURL=explorestories.component.js.map

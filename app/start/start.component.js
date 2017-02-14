@@ -18,6 +18,9 @@ var StartComponent = (function () {
     StartComponent.prototype.onExplore = function () {
         this._router.navigate(['/explore']);
     };
+    StartComponent.prototype.onMyQuilt = function () {
+        this._router.navigate(['/my_quilt']);
+    };
     StartComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/start/start.component.html',

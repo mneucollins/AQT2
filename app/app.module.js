@@ -17,6 +17,7 @@ var home_component_1 = require('./home/home.component');
 var start_component_1 = require('./start/start.component');
 // import { GlobalNavComponent } from './shared/globalnav.component';
 var explore_module_1 = require('./explore/explore.module');
+var participate_module_1 = require('./participate/participate.module');
 var shared_module_1 = require('./shared/shared.module');
 var AppModule = (function () {
     function AppModule() {
@@ -35,7 +36,8 @@ var AppModule = (function () {
                     { path: '**', redirectTo: 'home', pathMatch: 'full' }
                 ]),
                 explore_module_1.ExploreModule,
-                shared_module_1.SharedModule
+                shared_module_1.SharedModule,
+                participate_module_1.ParticipateModule,
             ],
             declarations: [
                 app_component_1.AppComponent,

@@ -14,4 +14,8 @@ export class StartComponent{
     onExplore(): void {
         this._router.navigate(['/explore']);
     }
+
+    onMyQuilt(): void {
+        this._router.navigate(['/my_quilt']);
+    }
 }
