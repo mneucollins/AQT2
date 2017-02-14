@@ -10,25 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var ExploreComponent = (function () {
-    function ExploreComponent(_router) {
+var MyParticipationComponent = (function () {
+    function MyParticipationComponent(_router) {
         this._router = _router;
     }
     ;
-    ExploreComponent.prototype.onExploreTheQuilt = function () {
-        this._router.navigate(['/explore_the_quilt']);
+    MyParticipationComponent.prototype.onFavorites = function () {
+        //  this._router.navigate(['/my_favorites']);
     };
-    ExploreComponent.prototype.onExploreTheStories = function () {
-        this._router.navigate(['/explore_stories']);
+    MyParticipationComponent.prototype.onMyAlbums = function () {
+        //this._router.navigate(['/my_albums']);
     };
-    ExploreComponent = __decorate([
+    MyParticipationComponent.prototype.onAddContent = function () {
+        //this._router.navigate(['/add_my_stories']);
+    };
+    MyParticipationComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/explore/explore.component.html',
-            styleUrls: ['app/explore/explore.component.css']
+            templateUrl: 'app/participate/participate.component.html',
+            styleUrls: ['app/participate/participate.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], ExploreComponent);
-    return ExploreComponent;
+    ], MyParticipationComponent);
+    return MyParticipationComponent;
 }());
-exports.ExploreComponent = ExploreComponent;
-//# sourceMappingURL=explore.component.js.map
+exports.MyParticipationComponent = MyParticipationComponent;
+//# sourceMappingURL=participate.component.js.map
