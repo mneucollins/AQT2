@@ -8,10 +8,11 @@ import { HomeComponent } from './home/home.component';
 import { StartComponent } from './start/start.component';
 // import { GlobalNavComponent } from './shared/globalnav.component';
 import { ExploreModule } from './explore/explore.module';
+import { ParticipateModule } from './participate/participate.module';
 import { SharedModule } from './shared/shared.module'
 
 @NgModule({
-  imports: [ 
+  imports: [
     BrowserModule,
     RouterModule.forRoot ([
       { path: 'home', component: HomeComponent },
@@ -23,11 +24,12 @@ import { SharedModule } from './shared/shared.module'
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ]),
     ExploreModule,
-    SharedModule
+    SharedModule,
+    ParticipateModule,
   ],
-  
 
-  declarations: [ 
+
+  declarations: [
     AppComponent,
     HomeComponent,
     StartComponent,

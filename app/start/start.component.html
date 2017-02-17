@@ -8,7 +8,7 @@
                 <div class="icon-explore"></div>
             </div>
         </div>
-        <div id="participate-button" ng-click='goTo("/my_quilt")'>
+        <div id="participate-button" (click)='onMyQuilt()'>
             <div class="aqtnav-button-label txt-reverse">
                 <span class = "txt-yellow-green menuitem-bold">
                     My<br />
@@ -18,6 +18,6 @@
             </div>
         </div>
     </div>
-    
+
     <globalnav4></globalnav4>
 </div>

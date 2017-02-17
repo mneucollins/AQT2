@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ExploreComponent } from './explore.component';
 import { ExploreQuiltComponent } from './explorequilt.component';
+import { ExploreStoriesComponent } from './explorestories.component';
 import { ViewRandomComponent } from './viewrandom.component';
 import { TakeTourComponent } from './taketour.component';
 import { FindNameComponent } from './findaname.component';
@@ -16,6 +17,7 @@ import { FindNameComponent } from './findaname.component';
     declarations:[
         ExploreComponent,
         ExploreQuiltComponent,
+        ExploreStoriesComponent,
         ViewRandomComponent,
         TakeTourComponent,
         FindNameComponent,
@@ -29,6 +31,7 @@ import { FindNameComponent } from './findaname.component';
         RouterModule.forChild([
             { path: 'explore', component: ExploreComponent },
             { path: 'explore_the_quilt', component: ExploreQuiltComponent },
+            { path: 'explore_stories', component: ExploreStoriesComponent },
             { path: 'view_random', component: ViewRandomComponent },
             { path: 'take_a_tour', component: TakeTourComponent },
             { path: 'find_a_name', component: FindNameComponent },

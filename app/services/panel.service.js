@@ -9,26 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var ExploreComponent = (function () {
-    function ExploreComponent(_router) {
-        this._router = _router;
+//import the mock data
+var mock_panels_1 = require('./mock-panels');
+var PanelService = (function () {
+    function PanelService() {
     }
-    ;
-    ExploreComponent.prototype.onExploreTheQuilt = function () {
-        this._router.navigate(['/explore_the_quilt']);
+    //getRandomPanel(): Promise<HTMLImageElement> {
+    PanelService.prototype.getRandomPanel = function () {
+        //return Promise.resolve(PANELS[Math.round(Math.random() * (PANELS.length - 1)]);
+        return mock_panels_1.PANELS[Math.round(Math.random() * (mock_panels_1.PANELS.length - 1))];
     };
-    ExploreComponent.prototype.onExploreTheStories = function () {
-        this._router.navigate(['/explore_stories']);
-    };
-    ExploreComponent = __decorate([
-        core_1.Component({
-            templateUrl: 'app/explore/explore.component.html',
-            styleUrls: ['app/explore/explore.component.css']
-        }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], ExploreComponent);
-    return ExploreComponent;
+    PanelService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], PanelService);
+    return PanelService;
 }());
-exports.ExploreComponent = ExploreComponent;
-//# sourceMappingURL=explore.component.js.map
+exports.PanelService = PanelService;
+//# sourceMappingURL=panel.service.js.map
