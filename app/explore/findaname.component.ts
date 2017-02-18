@@ -8,5 +8,9 @@ import { Router } from '@angular/router';
 
 export class FindNameComponent{
     constructor ( private _router: Router){};
+    
+    onFindName(): void {}
+    
+    onMoreOptions(): void {}
 
 }

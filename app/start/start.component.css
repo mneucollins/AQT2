@@ -21,11 +21,10 @@
 }
 
 .icon-explore {
-  /*magnifying glass, open background*/
-  background-repeat: no-repeat;
-  width: 72px;
-  height: 72px;
-  background-image: url(../images/layout/icon-explore.png);
+  /*magnifying glass, open background
+  defined in global.css
+  positioned here
+  */
   position: relative;
   bottom: 50px;
   float: right; }
