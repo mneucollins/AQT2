@@ -15,6 +15,8 @@ var FindNameComponent = (function () {
         this._router = _router;
     }
     ;
+    FindNameComponent.prototype.onFindName = function () { };
+    FindNameComponent.prototype.onMoreOptions = function () { };
     FindNameComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/explore/findaname.component.html',

@@ -88,6 +88,13 @@ body {
 .spaceabove20 {
     margin-top: 20px; }
 
+.spacebelow40 {
+    margin-bottom: 40px; }
+
+.spacebelow20 {
+    margin-bottom: 20px; }
+
+
 .align-left {
     width: 100%;
     text-align: left;
@@ -126,7 +133,7 @@ body {
   background-repeat: no-repeat;
   width: 42px;
   height: 42px;
-  background-image: url(../images/icons/sprite-icon.png);
+  background-image: url(/app/assets/images/icons/sprite-icon.png);
   padding: 0px; }
 
 .icon-info {
