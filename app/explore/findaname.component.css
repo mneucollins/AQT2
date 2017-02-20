@@ -34,10 +34,12 @@
 
 #find_name-button {
   background-color: #F495B4;
+  width:92%;
 }
 
 #more_options-button {
-  background-color: #F495B4;
+  background-color: #F05A28;
+  width:92%;
 }
 
 
@@ -50,11 +52,25 @@
   padding-top: 1%;
   padding-bottom: 1%; }
 
+ .more_options-menu {
+  font-size: 1.1em;
+  text-align:center;
+ }
+
+
+#more_options-button {
+  background-color: #F05A28;
+  text-align: center;  
+
+}
+#more_otions-label {
+  font-size: 1.2em;
+}
+
 .text-muted {
   color: #c1c1c1;
   line-height: 1em;
 }
-
 
 .display_panel {
   width: 110%;

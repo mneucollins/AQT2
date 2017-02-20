@@ -28,18 +28,24 @@
 					</small>
 				</div>
 			</div>
-			<div class="row spaceabove20">
-				<div class="col-xs-8 col-xs-offset-1" id="find_name-button" (click)='onFindName()'>
-					<span class="txt-reverse">Find Name</span>
-					<div class="col-xs-2 icon-right vcenter"></div>
+
+			<div class="row" id="more_options-button" (click)='onMoreOptions()'>
+				<div class="col-xs-8 text-center more_options-menu vcenter">
+					<span class="txt-reverse"><i>More Options&hellip;</i></span>
 				</div>
 			</div>
-			<div class="row spaceabove20 spacebelow20">
-				<div class="col-xs-8 col-xs-offset-1" id="more_options-button" (click)='onMoreOptions()'>
-					<span class="txt-reverse">More Options</span>
-					<div class="col-xs-2 icon-right vcenter"></div>
+
+			<div class="row spaceabove20" id="find_name-button" (click)='onFindName()'>
+				<div class="col-xs-9 col-xs-offset-1 vcenter">
+					<div class="find_name-menu txt-reverse">
+						Find Name
+					</div>					
 				</div>
+				<div class="col-xs-2 vcenter icon-right"></div>
 			</div>
+
+			<div class="row spaceabove20"></div>
+
 		</div>		
 		
 	</div>
