@@ -10,17 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var panel_service_1 = require('../services/panel.service');
 var ViewRandomComponent = (function () {
-    function ViewRandomComponent(_router) {
+    function ViewRandomComponent(_router, PanelService) {
         this._router = _router;
+        this.PanelService = PanelService;
     }
     ;
+    ViewRandomComponent.prototype.ngOnInit = function () {
+        this.getPanel();
+    };
+    ViewRandomComponent.prototype.getPanel = function () {
+        this.panel = this.PanelService.getRandomPanel();
+        //this.PanelService.getRandomPanel().then(panel => this.panel = panel)
+        //this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+    };
     ViewRandomComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/explore/viewrandom.component.html',
-            styleUrls: ['app/explore/viewrandom.component.css']
+            styleUrls: ['app/explore/viewrandom.component.css'],
+            providers: [panel_service_1.PanelService],
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [router_1.Router, panel_service_1.PanelService])
     ], ViewRandomComponent);
     return ViewRandomComponent;
 }());

@@ -10,25 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var ExploreComponent = (function () {
-    function ExploreComponent(_router) {
+var FindMoreOptionsComponent = (function () {
+    function FindMoreOptionsComponent(_router) {
         this._router = _router;
     }
     ;
-    ExploreComponent.prototype.onExploreTheQuilt = function () {
-        this._router.navigate(['/explore_the_quilt']);
+    FindMoreOptionsComponent.prototype.onFewerOptions = function () {
+        this._router.navigate(['/find_a_name']);
     };
-    ExploreComponent.prototype.onExploreTheStories = function () {
-        this._router.navigate(['/explore_stories']);
-    };
-    ExploreComponent = __decorate([
+    FindMoreOptionsComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/explore/explore.component.html',
-            styleUrls: ['app/explore/explore.component.css']
+            templateUrl: 'app/explore/findmoreoptions.component.html',
+            styleUrls: ['app/explore/findmoreoptions.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], ExploreComponent);
-    return ExploreComponent;
+    ], FindMoreOptionsComponent);
+    return FindMoreOptionsComponent;
 }());
-exports.ExploreComponent = ExploreComponent;
-//# sourceMappingURL=explore.component.js.map
+exports.FindMoreOptionsComponent = FindMoreOptionsComponent;
+//# sourceMappingURL=findmoreoptions.component.js.map

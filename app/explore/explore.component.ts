@@ -13,8 +13,9 @@ export class ExploreComponent{
         this._router.navigate(['/explore_the_quilt']);
     }
 
-    onGoMyQuilt(): void {
-
+    onExploreTheStories(): void {
+        this._router.navigate(['/explore_stories']);
     }
+
 
 }
