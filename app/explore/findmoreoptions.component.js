@@ -10,24 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var FindANameComponent = (function () {
-    function FindANameComponent(_router) {
+var FindMoreOptionsComponent = (function () {
+    function FindMoreOptionsComponent(_router) {
         this._router = _router;
     }
     ;
-
-    FindANameComponent.prototype.onFindName = function () { };
-    FindANameComponent.prototype.onMoreOptions = function () {
-        this._router.navigate(['/find_more_options']);
+    FindMoreOptionsComponent.prototype.onFewerOptions = function () {
+        this._router.navigate(['/find_a_name']);
     };
-    FindANameComponent = __decorate([
+    FindMoreOptionsComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/explore/findaname.component.html',
-            styleUrls: ['app/explore/findaname.component.css']
+            templateUrl: 'app/explore/findmoreoptions.component.html',
+            styleUrls: ['app/explore/findmoreoptions.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], FindANameComponent);
-    return FindANameComponent;
+    ], FindMoreOptionsComponent);
+    return FindMoreOptionsComponent;
 }());
-exports.FindANameComponent = FindANameComponent;
-//# sourceMappingURL=findaname.component.js.map
+exports.FindMoreOptionsComponent = FindMoreOptionsComponent;
+//# sourceMappingURL=findmoreoptions.component.js.map
