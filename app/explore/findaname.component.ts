@@ -11,8 +11,10 @@ export class FindANameComponent{
     
     onFindName(): void {}
     
+
     onMoreOptions(): void {
         this._router.navigate(['/find_more_options']);
     }
+
 
 }
