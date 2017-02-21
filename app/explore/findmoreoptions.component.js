@@ -15,7 +15,9 @@ var FindMoreOptionsComponent = (function () {
         this._router = _router;
     }
     ;
-    FindMoreOptionsComponent.prototype.onFewerOptions = function () { };
+    FindMoreOptionsComponent.prototype.onFewerOptions = function () {
+        this._router.navigate(['/find_a_name']);
+    };
     FindMoreOptionsComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/explore/findmoreoptions.component.html',

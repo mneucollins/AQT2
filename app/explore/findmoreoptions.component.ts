@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 export class FindMoreOptionsComponent{
     constructor ( private _router: Router){};
 
-    onFewerOptions(): void {}
+    onFewerOptions(): void {
+        this._router.navigate(['/find_a_name']);
+    }
 
 }
