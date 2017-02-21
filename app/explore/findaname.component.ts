@@ -6,11 +6,13 @@ import { Router } from '@angular/router';
     styleUrls: ['app/explore/findaname.component.css']
 })
 
-export class FindNameComponent{
+export class FindANameComponent{
     constructor ( private _router: Router){};
     
     onFindName(): void {}
     
-    onMoreOptions(): void {}
+    onMoreOptions(): void {
+        this._router.navigate(['/find_more_options']);
+    }
 
 }

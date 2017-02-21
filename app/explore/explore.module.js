@@ -20,6 +20,7 @@ var explorestories_component_1 = require('./explorestories.component');
 var viewrandom_component_1 = require('./viewrandom.component');
 var taketour_component_1 = require('./taketour.component');
 var findaname_component_1 = require('./findaname.component');
+var findmoreoptions_component_1 = require('./findmoreoptions.component');
 var ExploreModule = (function () {
     function ExploreModule() {
     }
@@ -31,7 +32,8 @@ var ExploreModule = (function () {
                 explorestories_component_1.ExploreStoriesComponent,
                 viewrandom_component_1.ViewRandomComponent,
                 taketour_component_1.TakeTourComponent,
-                findaname_component_1.FindNameComponent,
+                findaname_component_1.FindANameComponent,
+                findmoreoptions_component_1.FindMoreOptionsComponent,
             ],
             imports: [
                 forms_1.FormsModule,
@@ -43,7 +45,8 @@ var ExploreModule = (function () {
                     { path: 'explore_stories', component: explorestories_component_1.ExploreStoriesComponent },
                     { path: 'view_random', component: viewrandom_component_1.ViewRandomComponent },
                     { path: 'take_a_tour', component: taketour_component_1.TakeTourComponent },
-                    { path: 'find_a_name', component: findaname_component_1.FindNameComponent },
+                    { path: 'find_a_name', component: findaname_component_1.FindANameComponent },
+                    { path: 'find_more_options', component: findmoreoptions_component_1.FindMoreOptionsComponent },
                 ])
             ],
             providers: []
