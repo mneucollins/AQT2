@@ -4,7 +4,7 @@ body {
 
 .globalnav {
     background-color: #3A3A3C;
-    position: absolute;
+    position: fixed;
     /*left: 0px;*/
     width: 100%;
     /*padding-top: 6px;
