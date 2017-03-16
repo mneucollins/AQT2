@@ -10,24 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var TakeTourComponent = (function () {
-    function TakeTourComponent(_router) {
+var ViewTourComponent = (function () {
+    function ViewTourComponent(_router) {
         this._router = _router;
     }
     ;
-    TakeTourComponent.prototype.onViewTour = function () {
-        this._router.navigate(['/view_tour']);
-        // note: this is sandbox version
-        // final version should pass a parameter to identify the tour
-    };
-    TakeTourComponent = __decorate([
+    ViewTourComponent = __decorate([
         core_1.Component({
-            templateUrl: 'app/explore/taketour.component.html',
-            styleUrls: ['app/explore/taketour.component.css']
+            templateUrl: 'app/explore/viewtour.component.html',
+            styleUrls: ['app/explore/viewtour.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], TakeTourComponent);
-    return TakeTourComponent;
+    ], ViewTourComponent);
+    return ViewTourComponent;
 }());
-exports.TakeTourComponent = TakeTourComponent;
-//# sourceMappingURL=taketour.component.js.map
+exports.ViewTourComponent = ViewTourComponent;
+//# sourceMappingURL=viewtour.component.js.map

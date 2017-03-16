@@ -9,4 +9,10 @@ import { Router } from '@angular/router';
 export class TakeTourComponent{
     constructor ( private _router: Router){};
 
+    onViewTour(): void {
+        this._router.navigate(['/view_tour']);
+        // note: this is sandbox version
+        // final version should pass a parameter to identify the tour
+    }
+
 }
