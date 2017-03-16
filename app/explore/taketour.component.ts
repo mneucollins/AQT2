@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { OnInit } from '@angular/core';
 import { TourService } from '../services/tours.service';
+
 
 
 @Component({
@@ -24,5 +26,5 @@ export class TakeTourComponent implements OnInit{
           //this.tour = this.TourService.getDemoTour();
           //this.PanelService.getRandomPanel().then(panel => this.panel = panel)
           //this.heroService.getHeroes().then(heroes => this.heroes = heroes);
-
+      }
 }
