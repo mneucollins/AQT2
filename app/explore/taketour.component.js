@@ -10,17 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var tours_service_1 = require('../services/tours.service');
 var TakeTourComponent = (function () {
-    function TakeTourComponent(_router) {
+    function TakeTourComponent(_router, TourService) {
         this._router = _router;
+        this.TourService = TourService;
     }
     ;
+    TakeTourComponent.prototype.ngOnInit = function () {
+        this.getTour();
+    };
+    TakeTourComponent.prototype.getTour = function () {
+        //this.tour = this.TourService.getDemoTour();
+        //this.PanelService.getRandomPanel().then(panel => this.panel = panel)
+        //this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+    };
     TakeTourComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/explore/taketour.component.html',
-            styleUrls: ['app/explore/taketour.component.css']
+            styleUrls: ['app/explore/taketour.component.css'],
+            providers: [tours_service_1.TourService],
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [router_1.Router, tours_service_1.TourService])
     ], TakeTourComponent);
     return TakeTourComponent;
 }());

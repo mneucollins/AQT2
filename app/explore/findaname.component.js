@@ -15,7 +15,6 @@ var FindANameComponent = (function () {
         this._router = _router;
     }
     ;
-
     FindANameComponent.prototype.onFindName = function () { };
     FindANameComponent.prototype.onMoreOptions = function () {
         this._router.navigate(['/find_more_options']);
