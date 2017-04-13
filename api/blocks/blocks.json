@@ -1,3 +1,4 @@
+//2017-04-12: refactor this based upon Interface Diagram
 [{
 	"blockNum": "00054",
 	"panels": {
@@ -12,13 +13,13 @@
 				"name1": "Hank Sharp",
 				"dob": "1942-12-03",
 				"dod": "1986-04-30",
-				"city": "Houston",			},
+				"city": "Houston"},
 				"otherLocs": {
 					"otherLoc1": "WV",
 					"otherLoc2": "Panama",
 					"otherLoc3": "San Francisco",
 					"otherLoc4": "CA"
-				},
+				}
 			},
 			"dateRecd": "1987-09-08",
 			"makers": {
