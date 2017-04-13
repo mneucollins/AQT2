@@ -1,7 +1,9 @@
+import { IPanel } from './panel';
+
 export interface IBlock {
-    blockId: number;
-    addDate: Date;
+    blockNum: string;
     imageUrl: string;
+    panels: IPanel;
     //...+other metadata
     //layout?
 }
