@@ -10,4 +10,45 @@ export class ExploreStoriesComponent{
     constructor ( private _router: Router){};
 
 
+    onActivism(): void {
+
+    }
+
+    onLatino(): void {
+
+    }
+
+    onAfricanAmerican(): void {
+
+    }
+
+    onCouples(): void {
+
+    }
+
+    onWomen(): void {
+
+    }
+
+    onHealing(): void {
+
+    }
+
+    onArts(): void {
+
+    }
+
+    onFamilies(): void {
+
+    }
+
+    onChildren(): void {
+
+    }
+
+    onCommunity(): void {
+
+    }
+
+
 }
