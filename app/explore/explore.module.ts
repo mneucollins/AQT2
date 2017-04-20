@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-// import { CommonModule } from '@angular/common';
-// CommonModule is now imported from SharedModule
+import { HttpModule } from '@angular/http'
+
+//import { CommonModule } from '@angular/common';
+//Common Module is now imported into SharedModule which is imported here
 import { SharedModule } from '../shared/shared.module';
+
 import { ExploreComponent } from './explore.component';
 import { ExploreQuiltComponent } from './explorequilt.component';
 import { ExploreStoriesComponent } from './explorestories.component';
@@ -30,7 +33,7 @@ import { FindMoreOptionsComponent } from './findmoreoptions.component';
 
     imports:[
         FormsModule,
-        // CommonModule,
+        HttpModule,
         SharedModule,
         RouterModule.forChild([
             { path: 'explore', component: ExploreComponent },

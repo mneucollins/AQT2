@@ -17,14 +17,21 @@ require('rxjs/add/operator/map');
 var BlockService = (function () {
     function BlockService(_http) {
         this._http = _http;
-        //replace this with an http request to collective access
+        //replace this with an http api request to collective access
         this._blockUrl = 'api/blocks/blocks.json';
     }
+    //getblocks holds the api call
     BlockService.prototype.getBlocks = function () {
         return this._http.get(this._blockUrl)
             .map(function (response) { return response.json(); })
             .do(function (data) { return console.log('ALL: ' + JSON.stringify(data)); })
             .catch(this.handleError);
+    };
+    BlockService.prototype.getBlock = function (blockId) {
+        //takes a parameter and returns the block info     
+        return this.getBlocks()
+            .map(function (blocks) { return blocks.find(function (b) { return b.blockId === blockId; }); });
+        ;
     };
     BlockService.prototype.handleError = function (error) {
         console.error(error);
