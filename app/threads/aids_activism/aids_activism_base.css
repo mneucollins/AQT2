@@ -1,0 +1,21 @@
+#navback {
+      background-image: url(/app/assets/images/icons/left_burnt.png);
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 72px;
+      top: 15px;
+      left: 10px;
+      opacity: 1;
+      position: fixed;
+}
+
+#navforward{
+      background-image: url(/app/assets/images/icons/right_burnt.png);
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 72px;
+      top: 15px;
+      right: 10px;
+      position: fixed;
+      opacity: .8;
+}

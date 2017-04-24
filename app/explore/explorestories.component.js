@@ -15,6 +15,27 @@ var ExploreStoriesComponent = (function () {
         this._router = _router;
     }
     ;
+    ExploreStoriesComponent.prototype.onActivism = function () {
+        this._router.navigate(['/aids_activism_01']);
+    };
+    ExploreStoriesComponent.prototype.onLatino = function () {
+    };
+    ExploreStoriesComponent.prototype.onAfricanAmerican = function () {
+    };
+    ExploreStoriesComponent.prototype.onCouples = function () {
+    };
+    ExploreStoriesComponent.prototype.onWomen = function () {
+    };
+    ExploreStoriesComponent.prototype.onHealing = function () {
+    };
+    ExploreStoriesComponent.prototype.onArts = function () {
+    };
+    ExploreStoriesComponent.prototype.onFamilies = function () {
+    };
+    ExploreStoriesComponent.prototype.onChildren = function () {
+    };
+    ExploreStoriesComponent.prototype.onCommunity = function () {
+    };
     ExploreStoriesComponent = __decorate([
         core_1.Component({
             templateUrl: 'app/explore/explorestories.component.html',

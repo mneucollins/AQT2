@@ -9,9 +9,11 @@ import { StartComponent } from './start/start.component';
 // import { GlobalNavComponent } from './shared/globalnav.component';
 import { ExploreModule } from './explore/explore.module';
 import { ParticipateModule } from './participate/participate.module';
+import { ThreadsModule } from './threads/threads.module';
 import { SharedModule } from './shared/shared.module';
 
-import { TakeTourComponent } from './explore/taketour.component'
+import { TakeTourComponent } from './explore/taketour.component';
+
 
 @NgModule({
   imports: [
@@ -28,6 +30,7 @@ import { TakeTourComponent } from './explore/taketour.component'
     ExploreModule,
     SharedModule,
     ParticipateModule,
+    ThreadsModule,
   ],
 
 

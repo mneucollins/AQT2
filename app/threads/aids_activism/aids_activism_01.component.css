@@ -1,0 +1,33 @@
+#aa_bak1 {
+  background-image: url(/app/assets/images/backgrounds/workroom_bak.jpg);
+  background-repeat: no-repeat;
+  background-position: 40% 0%;
+  background-attachment: fixed;
+  min-height: 800px;
+  text-align: center;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.title_text {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 3.8em;
+  line-height: 1.2em;
+  margin-top: 35%;
+  color: #D7DF23;
+}
+
+
+/*generic smartphone in landscape mode*/
+@media only screen 
+    and (min-width: 320px) 
+    and (max-width: 736px) 
+    and (orientation: landscape) {
+      .title_text{
+        margin-top: 5%;
+      }
+    }

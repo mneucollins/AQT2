@@ -4,43 +4,23 @@ import { HttpModule } from '@angular/http'
 
 import { SharedModule } from '../shared/shared.module';
 
-import { AidsActivismComponent } from './aids_activism/aids_activism.component';
-// import { ExploreQuiltComponent } from './explorequilt.component';
-// import { ExploreStoriesComponent } from './explorestories.component';
-// import { ViewRandomComponent } from './viewrandom.component';
-// import { TakeTourComponent } from './taketour.component';
-// import { ViewTourComponent } from './viewtour.component';
-// import { FindANameComponent } from './findaname.component';
-// import { FindMoreOptionsComponent } from './findmoreoptions.component';
+import { AidsActivism01Component } from './aids_activism/aids_activism_01.component';
+import { AidsActivism02Component } from './aids_activism/aids_activism_02.component';
 
 
 
 @NgModule({
     declarations:[
-        AidsActivismComponent,
-        // ExploreQuiltComponent,
-        // ExploreStoriesComponent,
-        // ViewRandomComponent,
-        // TakeTourComponent,
-        // ViewTourComponent,
-        // FindANameComponent,
-        // FindMoreOptionsComponent,
-        // ExploreRandomComponent,
+        AidsActivism01Component,
+        AidsActivism02Component,
     ],
 
     imports:[
         HttpModule,
         SharedModule,
         RouterModule.forChild([
-            { path: 'aids_activism', component: AidsActivismComponent },
-            // { path: 'explore_the_quilt', component: ExploreQuiltComponent },
-            // { path: 'explore_stories', component: ExploreStoriesComponent },
-            // { path: 'view_random', component: ViewRandomComponent },
-            // { path: 'take_a_tour', component: TakeTourComponent },
-            // { path: 'view_tour', component: ViewTourComponent },
-            // { path: 'find_a_name', component: FindANameComponent },
-            // { path: 'find_more_options', component: FindMoreOptionsComponent },
-            // { path: 'exploreRandom', component: ExploreRandomComponent }
+            { path: 'aids_activism_01', component: AidsActivism01Component },
+            { path: 'aids_activism_02', component: AidsActivism02Component },
         ])
     ],
     providers:[]

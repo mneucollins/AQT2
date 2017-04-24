@@ -11,17 +11,20 @@
 	margin-right: -20px;
 }
 
-#explore_the_quilt-heading {
+.explore_stories-heading {
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 3em;
   line-height: 1.2em;
-  margin-top: 10%;
-  /*margin-left: -10%;*/ }
+  margin-top: 5%;
+}
 
-#viewrandom-button, #findname-button, #taketour-button {
+/*buttons as id's in case we need to target them*/
+#aids_activism-button, #latino-button, #african_american-button, 
+#aids_couples-button, #healing-button, #women-button, #theater_arts-button, 
+#families-button, #community-button, #children-button {
   width: 110%;
   top: 40%;
   padding-left: 10%;
@@ -29,9 +32,10 @@
   padding-bottom: 10px;
   margin-left: -15px;
   /*margin-top: 10px;*/
-  background-color: #F495B4; }
+  background-color: #F495B4; 
+  }
 
-.explore_the_quilt-label, viewrandom-label {
+.button-label {
   font-size: 1.4em;
   line-height: 1.9em;
   text-align: left;
@@ -39,7 +43,8 @@
   padding-top: 1%;
   padding-bottom: 1%; }
 
-.explore_the_quilt-menu {
+
+.explore_stories-menu {
   font-size: 1.3em;
   width: 100%;
   line-height: 1.9em;
@@ -47,3 +52,31 @@
   text-transform: uppercase;
   padding-top: 1%;
   padding-bottom: 1%; }
+
+/*generic smartphone in portrait mode*/
+@media only screen 
+    and (min-width: 320px) 
+    and (max-width: 736px) 
+    {
+      .explore_stories-heading {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 2.3em;
+        line-height: 1.2em;
+        margin-top: 2%;
+      }
+    }
+
+/*generic smartphone in landscape mode*/
+@media only screen 
+    and (min-width: 320px) 
+    and (max-width: 736px) 
+    and (orientation: landscape) {
+      .explore_stories-heading {
+        font-size: 3em;
+        margin-top: 2%;
+      }
+    
+    }
