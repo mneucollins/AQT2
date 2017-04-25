@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
   background-position: 40% 0%;
   background-attachment: fixed;
-  min-height: 800px;
+  background-size: auto 100%;
+  min-height: 1024px;
   text-align: center;
   overflow: hidden;
   margin-left: -20px;
@@ -11,9 +12,33 @@
   background-color: #666666;
 }
 
+/*bodytext and media query body text in aids_activism_base.css*/
 .body_text {
-    font-size: 1.75em;
+    font-size: 3em;
     color: white;
     text-align: left;
     margin-left: 25px;
 }
+
+/*generic smartphone in landscape mode*/
+@media only screen 
+    and (min-width: 320px) 
+    and (max-width: 736px) 
+    and (orientation: landscape) {
+      .body_text {
+          font-size: 1.75em;
+          margin-left: 25px;
+      }
+    }
+
+/*generic smartphone in portrait mode*/
+@media only screen 
+    and (min-width: 320px) 
+    and (max-width: 736px) 
+    and (orientation: portrait) {
+      .body_text {
+          font-size: 1.6em;
+          margin-left: 5%;
+          margin-right: 5%
+      }
+    }

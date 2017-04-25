@@ -14,6 +14,9 @@ var http_1 = require('@angular/http');
 var shared_module_1 = require('../shared/shared.module');
 var aids_activism_01_component_1 = require('./aids_activism/aids_activism_01.component');
 var aids_activism_02_component_1 = require('./aids_activism/aids_activism_02.component');
+var aids_activism_03_component_1 = require('./aids_activism/aids_activism_03.component');
+var aids_activism_04_component_1 = require('./aids_activism/aids_activism_04.component');
+// import { AidsActivism05Component } from './aids_activism/aids_activism_05.component';
 var ThreadsModule = (function () {
     function ThreadsModule() {
     }
@@ -22,6 +25,8 @@ var ThreadsModule = (function () {
             declarations: [
                 aids_activism_01_component_1.AidsActivism01Component,
                 aids_activism_02_component_1.AidsActivism02Component,
+                aids_activism_03_component_1.AidsActivism03Component,
+                aids_activism_04_component_1.AidsActivism04Component,
             ],
             imports: [
                 http_1.HttpModule,
@@ -29,6 +34,8 @@ var ThreadsModule = (function () {
                 router_1.RouterModule.forChild([
                     { path: 'aids_activism_01', component: aids_activism_01_component_1.AidsActivism01Component },
                     { path: 'aids_activism_02', component: aids_activism_02_component_1.AidsActivism02Component },
+                    { path: 'aids_activism_03', component: aids_activism_03_component_1.AidsActivism03Component },
+                    { path: 'aids_activism_04', component: aids_activism_04_component_1.AidsActivism04Component },
                 ])
             ],
             providers: []
